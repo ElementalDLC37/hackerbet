@@ -9,7 +9,7 @@ export function Main() {
   return (
     <InnerMain className={montserrat.className}>
       <PageIndication />
-      <iframe src="http://localhost:3001" frameBorder="0"></iframe>
+      <iframe src="https://gnobet-iframe.vercel.app/" frameBorder="0"></iframe>
     </InnerMain>
   )
 }
