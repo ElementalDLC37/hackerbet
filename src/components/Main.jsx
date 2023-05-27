@@ -64,7 +64,7 @@ function PageIndication() {
 
 const InnerPageIndication = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
