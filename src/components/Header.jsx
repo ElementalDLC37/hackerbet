@@ -10,9 +10,12 @@ import {
   Heart,
   Home,
 } from 'react-huge-icons/solid'
+import { LogoIcon, LogoTitle } from '../assets/Logo'
 
+// Import tipography
 const manrope = Manrope({ subsets: ['latin'] })
 
+// Component
 export function Header() {
   return (
     <InnerHeader className={manrope.className}>
@@ -22,7 +25,6 @@ export function Header() {
     </InnerHeader>
   )
 }
-
 const InnerHeader = styled.header`
   display: none;
   align-items: center;
@@ -46,16 +48,14 @@ const InnerHeader = styled.header`
 `
 
 /// SubComponents
-
 function Logo() {
   return (
     <InnerLogo>
-      <Image width={30} height={30} src="/logo-icon.svg" alt="Hackerbet" />
-      <Image width={100} height={12} src="/logo-title.svg" alt="HackerBet" />
+      <LogoIcon />
+      <LogoTitle />
     </InnerLogo>
   )
 }
-
 const InnerLogo = styled.span`
   display: flex;
   height: 30px;
@@ -63,9 +63,7 @@ const InnerLogo = styled.span`
   gap: 11px;
   cursor: pointer;
 `
-
 //
-
 function Menu() {
   return (
     <InnerMenu>
@@ -96,7 +94,6 @@ function Menu() {
     </InnerMenu>
   )
 }
-
 const InnerMenu = styled.ul`
   display: flex;
   height: 30px;
@@ -137,9 +134,7 @@ const InnerMenu = styled.ul`
     }
   }
 `
-
 //
-
 function User() {
   return (
     <InnerUser>
@@ -149,7 +144,6 @@ function User() {
     </InnerUser>
   )
 }
-
 const InnerUser = styled.button`
   display: flex;
   align-items: center;
