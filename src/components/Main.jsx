@@ -15,12 +15,19 @@ export function Main() {
 }
 
 const InnerMain = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+
   width: 100%;
   height: 100%;
   max-width: 1024px;
   margin: 0 auto;
   margin-top: 42px;
   padding: 0 26px;
+
+  @media (max-width: 768px) {
+  }
 
   iframe {
     width: 100%;
@@ -86,6 +93,10 @@ const InnerPageIndication = styled.div`
   h1 {
     font-size: 24px;
     font-weight: 700;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 
   svg {
