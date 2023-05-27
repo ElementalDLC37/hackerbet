@@ -1,10 +1,11 @@
 import { Montserrat } from 'next/font/google'
-
 import { DirectionLeft, Heart } from 'react-huge-icons/solid'
 import styled from 'styled-components'
 
+/// Tipography
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['700'] })
 
+/// Component
 export function Main() {
   return (
     <InnerMain className={montserrat.className}>
@@ -13,7 +14,6 @@ export function Main() {
     </InnerMain>
   )
 }
-
 const InnerMain = styled.div`
   display: flex;
   flex-direction: column;
@@ -45,7 +45,6 @@ const InnerMain = styled.div`
 `
 
 /// SubComponents
-
 function PageIndication() {
   return (
     <InnerPageIndication className={montserrat.className}>
@@ -61,7 +60,6 @@ function PageIndication() {
     </InnerPageIndication>
   )
 }
-
 const InnerPageIndication = styled.div`
   display: flex;
   justify-content: space-between;

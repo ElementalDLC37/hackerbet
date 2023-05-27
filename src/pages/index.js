@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Header } from '@/components/Header'
 import { Main } from '../components/Main'
 
+// Em caso de desincronização de classes entre o front e o server, "yarn cache clean".
 export default function Home() {
   return (
     <>
